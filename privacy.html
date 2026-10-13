@@ -31,7 +31,7 @@ hr { border: 0; border-top: 1px solid #e0e0e0; margin: 32px 0; }
 <header>
   <a href="index.html">← 返回主页</a>
   <h1>渔灵 App 隐私政策</h1>
-  <div class="meta">最后更新日期：2026 年 7 月 14 日 · 生效日期：2026 年 7 月 14 日</div>
+  <div class="meta">最后更新日期：2026 年 10 月 13 日 · 生效日期：2026 年 10 月 13 日</div>
 </header>
 
 <p>感谢您使用「渔灵」App。我们非常重视您的隐私。本隐私政策详细说明我们如何收集、使用和保护您的个人信息。</p>
@@ -61,6 +61,11 @@ hr { border: 0; border-top: 1px solid #e0e0e0; margin: 32px 0; }
   <li>❌ 您的健康数据</li>
 </ul>
 
+<h3>1.4 Apple 登录与会员服务</h3>
+<p>使用账号与会员服务时，我们接收 Apple 提供的本应用范围内的用户标识，用于建立渔灵账号。显示名称保存在设备，不要求提供邮箱，也不接收 Apple 密码、银行卡或完整支付资料。</p>
+<p>会员服务部署于阿里云中国杭州区域，账号与会员数据保存在阿里云 PostgreSQL 数据库。服务端保存账号标识、加密的 Apple 授权刷新令牌、登录会话的散列、订阅产品标识、交易编号、有效期、退款状态，以及 AI 请求日期、类别、请求内容的不可逆摘要、处理状态、用量计数与模型输入输出 token 数量。计量记录不保存完整对话或照片。信息用于验证会员归属、防止重复扣额度、同步续订和处理退款。</p>
+<p>登录会话保存在设备钥匙串。交易由 Apple 处理；渔灵向 Apple 验证交易并接收订阅状态通知。删除服务账号会撤销 Apple 授权并删除服务端关联的身份、会话、交易与计量记录；Apple 自身持有的交易记录由 Apple 管理。</p>
+<p>可以在 App 的 Apple 账号页面删除服务账号。删除账号不会自动取消苹果订阅，也不会清除独立保存在本设备及系统 iCloud 的钓鱼记录；取消订阅请使用「管理订阅」，钓鱼内容可在对应页面管理。重新使用同一 Apple 身份登录后，可恢复仍有效的苹果购买。</p>
 <h2>二、信息使用</h2>
 <p>我们使用您的信息仅用于：</p>
 <ol>
@@ -74,7 +79,7 @@ hr { border: 0; border-top: 1px solid #e0e0e0; margin: 32px 0; }
 
 <h3>3.1 本地存储</h3>
 <ul>
-  <li>所有您的私人数据默认存储在本设备（Core Data）</li>
+  <li>钓鱼记录等私人内容默认存储在本设备（Core Data）；账号、订阅与额度信息按下述会员服务说明处理</li>
   <li>App 不要求您填写第三方 AI 服务密钥；供应商密钥保存在服务端</li>
   <li>使用 AI 功能时，仅在您同意数据共享后，所需数据经我们的服务器代理转发至下列 AI 服务商；个人记录不会作为整库上传</li>
 </ul>
@@ -98,30 +103,30 @@ hr { border: 0; border-top: 1px solid #e0e0e0; margin: 32px 0; }
 <thead><tr><th>使用的服务</th><th>发送的数据</th><th>用途</th></tr></thead>
 <tbody>
 <tr><td><strong>阿里云百炼（通义千问 Qwen）</strong><br>杭州线路 / 新加坡国际线路</td><td>您输入的对话文本；拍摄或选择的鱼获/水域照片；当前天气、气压、位置城市等环境数据；您的钓鱼画像摘要（常钓鱼种、装备等，不含姓名、账号等身份信息）</td><td>生成 AI 回复、识别鱼种、分析钓点卫星图</td></tr>
-<tr><td><strong>Apple WeatherKit</strong></td><td>位置坐标</td><td>获取实时天气、潮汐、日出日落数据</td></tr>
+<tr><td><strong>Apple WeatherKit</strong></td><td>位置坐标</td><td>获取天气、日出日落数据</td></tr>
 </tbody>
 </table>
 <p>以上服务商均不会收到您的真实姓名、Apple 账号、联系方式等身份信息。我们要求第三方 AI 服务商仅将数据用于生成本次响应，不用于训练模型或其他用途。</p>
 <p>您可以在「App 内 → AI 对话首次使用时」的授权弹窗中选择同意或拒绝；拒绝后 AI 相关功能（对话、识鱼、天眼、语音、简报）将无法使用，但天气、地图、装备管理、手动记录鱼获等核心工具功能不受影响。您也可以随时在「我的 → AI 服务设置」中管理 AI 相关设置。</p>
 <h3>3.5 Sign in with Apple</h3>
 <ul>
-  <li><strong>Apple Sign in with Apple</strong>（如启用）：用于身份验证</li>
+  <li><strong>Apple Sign in with Apple</strong>：用于身份验证</li>
 </ul>
 
 <h2>四、信息分享</h2>
-<p>我们<strong>不会</strong>：</p>
+<p>我们的信息分享规则如下：</p>
 <ul>
   <li>❌ 出售您的个人信息</li>
   <li>❌ 将您的私人数据透露给广告商</li>
-  <li>❌ 将您的位置或鱼获信息透露给第三方（除您主动公开外）</li>
+  <li>在提供天气、AI 和同步功能所必需的范围内，按本政策及您的授权向相应服务商传输位置或鱼获相关信息；您主动公开的内容按社区说明展示</li>
 </ul>
 
 <h2>五、您的权利</h2>
 <ol>
   <li><strong>访问权</strong>：随时在 App 内查看您的所有数据</li>
   <li><strong>修改权</strong>：随时编辑或删除您的数据</li>
-  <li><strong>导出权</strong>：通过「数据分析中心」的 PDF / CSV 导出您的所有数据</li>
-  <li><strong>删除权</strong>：在「设置 → 账号管理」中可以一键删除所有云端数据</li>
+  <li><strong>导出权</strong>：使用 App 提供的 PDF / CSV 导出功能导出支持的钓鱼记录；账号与会员信息问题可通过下方联系方式联系处理</li>
+  <li><strong>删除权</strong>：在 Apple 账号页面删除渔灵服务账号及其关联的会员服务记录；本机、iCloud 私人记录和社区发布内容需要在相应功能中分别管理</li>
   <li><strong>撤回同意权</strong>：在 iOS 系统设置中关闭定位 / 通知 / 麦克风等权限</li>
 </ol>
 
@@ -132,8 +137,8 @@ hr { border: 0; border-top: 1px solid #e0e0e0; margin: 32px 0; }
 <table>
 <thead><tr><th>权限</th><th>用途</th><th>拒绝后果</th></tr></thead>
 <tbody>
-<tr><td>定位</td><td>实时天气、钓点记录、轨迹追踪</td><td>无法使用核心功能</td></tr>
-<tr><td>相机</td><td>拍摄鱼获、AI 识鱼</td><td>无法识鱼，仍可手动录入</td></tr>
+<tr><td>定位</td><td>实时天气、钓点记录、轨迹追踪</td><td>当前位置天气、附近钓点及轨迹等定位功能受限；其他不依赖定位的功能仍可使用</td></tr>
+<tr><td>相机</td><td>拍摄鱼获、AI 识鱼</td><td>无法直接拍摄；仍可选择已有照片或手动录入</td></tr>
 <tr><td>照片库</td><td>选取已有照片、保存战报</td><td>无法分享战报</td></tr>
 <tr><td>麦克风</td><td>语音对话 AI</td><td>无法使用语音功能</td></tr>
 <tr><td>语音识别</td><td>将语音转换为文字</td><td>同上</td></tr>
@@ -148,7 +153,7 @@ hr { border: 0; border-top: 1px solid #e0e0e0; margin: 32px 0; }
 <h2>九、联系我们</h2>
 <p>如对本政策有任何疑问、建议或投诉：</p>
 <ul>
-  <li>邮箱：<a href="mailto:callingmea@outlook.com">callingmea@outlook.com</a></li>
+  <li>邮箱：<a href="mailto:callingmea@gmail.com">callingmea@gmail.com</a></li>
   <li>App 内反馈：「我的 → 设置 → 意见反馈」</li>
 </ul>
 
